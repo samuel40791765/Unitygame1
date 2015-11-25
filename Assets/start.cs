@@ -18,7 +18,7 @@ public class start : MonoBehaviour {
                 Touch touch = Input.GetTouch(i);
                 if (this.GetComponent<GUITexture>().HitTest(touch.position))
                 {
-                    if (this.name == "Start")
+					if (this.name == "Play")
                         Application.LoadLevel("Scene1");
                 }
             }
