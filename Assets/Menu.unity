@@ -2614,7 +2614,7 @@ MonoBehaviour:
   mPivot: 4
   mDepth: 10
   mFont: {fileID: 11400000, guid: 7a48ea22e80d1ac4b97fdd87f9009546, type: 2}
-  mText: 'Example: Menu'
+  mText: PROTOTYPE1
   mMaxLineWidth: 0
   mMaxLineHeight: 0
   mEncoding: 1
@@ -4055,26 +4055,14 @@ MonoBehaviour:
   mPivot: 0
   mDepth: 10
   mFont: {fileID: 11400000, guid: ac44b8a25154a9d40a172ab5851e0986, type: 2}
-  mText: 'This example shows how to create a simple menu system with NGUI.
+  mText: 'This is the first prototype of our project fun game, there are many bugs,
+    so please bear with us.
 
+    We have created two levels so far and the basic movement of our charactor. Our
+    charactor is not the ball shown, but actually a water droplet, and will mimic
+    the physics of water.
 
-    In this example the menu is made up of two separate windows which animate into
-    position by clicking on buttons that activate the animations attached to their
-    Panels.
-
-
-    Animating panels is very efficient as it doesn''t cause their widgets to be rebuilt,
-    resulting in the best performance.
-
-
-    [99FF66]UIButtonPlayAnimation[-] lets you play animations forward or in reverse,
-    and it lets you specify the clip you wish to play. In this case, two clips are
-    used. One clip to animate the window moving forward, and another -- to animate
-    it moving away.
-
-
-    The animations were created right here in Unity using the built-in functionality:
-    [99FF66]Assets -> Create -> Animation[-].'
+    The water droplet will be add later onto our next prototype.'
   mMaxLineWidth: 460
   mMaxLineHeight: 0
   mEncoding: 1

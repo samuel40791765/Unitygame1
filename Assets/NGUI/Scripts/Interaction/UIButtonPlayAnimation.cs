@@ -119,8 +119,12 @@ public class UIButtonPlayAnimation : MonoBehaviour
 		if (enabled && trigger == Trigger.OnClick)
 		{
 			Play (true);
-			if (this.name == "Play")
+			if (this.name == "Level1")
 				Application.LoadLevel("Scene1");
+			if (this.name == "Level2")
+				Application.LoadLevel("Scene2");
+			if (this.name == "Level3")
+				Application.LoadLevel("Scene3");
 		}
 	}
 
