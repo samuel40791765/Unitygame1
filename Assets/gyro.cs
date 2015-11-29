@@ -25,7 +25,7 @@ public class gyro : MonoBehaviour {
             x = Input.gyro.attitude.x;
             y = Input.gyro.attitude.y;
             z = Input.gyro.attitude.z;
-            force = new Vector3(-x*10F , 0.0F, z*10F);
+            force = new Vector3(-x*20F , 0.0F, -y*20F);
 
 
         }
