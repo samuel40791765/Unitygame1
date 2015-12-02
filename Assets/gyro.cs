@@ -20,7 +20,7 @@ public class gyro : MonoBehaviour {
         float x;
         float y;
         float z;
-        if(isHasGyro)
+		if(isHasGyro && !destination.AtEnd)
         {
             x = Input.gyro.attitude.x;
             y = Input.gyro.attitude.y;
@@ -29,7 +29,7 @@ public class gyro : MonoBehaviour {
 
 
         }
-        else
+		else if(!destination.AtEnd)
         {
             x = Input.acceleration.x;
             y = Input.acceleration.y;
