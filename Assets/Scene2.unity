@@ -124,6 +124,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5479932, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_Constraints
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
   m_IsPrefabParent: 0
@@ -442,6 +446,7 @@ GameObject:
   - 92: {fileID: 1623842580}
   - 124: {fileID: 1623842579}
   - 81: {fileID: 1623842578}
+  - 45: {fileID: 1623842583}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -516,6 +521,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!45 &1623842583
+Skybox:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1623842577}
+  m_Enabled: 1
+  m_CustomSkybox: {fileID: 2100000, guid: 81e1ef74b0e8b41438827bef6d236418, type: 2}
 --- !u!1 &1873485789
 GameObject:
   m_ObjectHideFlags: 0
