@@ -25,7 +25,7 @@ public class gyro : MonoBehaviour {
             x = Input.gyro.attitude.x;
             y = Input.gyro.attitude.y;
             z = Input.gyro.attitude.z;
-            force = new Vector3(-x*40F , 0.0F, -y*40F);
+            force = new Vector3(-x*200F , 0.0F, -y*200F);
 
 
         }
@@ -34,7 +34,7 @@ public class gyro : MonoBehaviour {
             x = Input.acceleration.x;
             y = Input.acceleration.y;
             z = Input.acceleration.z;
-            force = new Vector3(-x * 40F, 0.0F, -y * 40F);
+            force = new Vector3(-x * 200F, 0.0F, -y * 200F);
         }
 
         ball.GetComponent<Rigidbody>().AddForce(force);
