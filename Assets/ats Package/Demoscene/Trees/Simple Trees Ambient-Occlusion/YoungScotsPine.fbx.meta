@@ -3,7 +3,12 @@ guid: 74689bfc40f5b48df95c1113c326a3a3
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
     4300000: YoungScotsPine
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3
