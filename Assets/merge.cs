@@ -17,7 +17,7 @@ public class merge : MonoBehaviour
     void OnCollisionEnter(Collision other)
     {
 
-        if (other.gameObject.name == "drop"&&split.mouse==true)
+        if (other.gameObject.name == "drop"&&split.hold==true)
         {
             Destroy(gameObject);
             Debug.Log("destroy");
