@@ -3,7 +3,6 @@ using System.Collections;
 
 public class merge : MonoBehaviour
 {
-    public GameObject drop;
     // Use this for initialization
     void Start()
     {
@@ -15,9 +14,16 @@ public class merge : MonoBehaviour
     {
 
     }
-    void OnCollisionEnter(Collision drop)
+    void OnCollisionEnter(Collision other)
     {
-        Destroy(this);
+
+        if (other.gameObject.name == "drop"&&split.mouse==true)
+        {
+            Destroy(gameObject);
+            Debug.Log("destroy");
+            split.issplit = false;
+        }
+      
     }
 }
 

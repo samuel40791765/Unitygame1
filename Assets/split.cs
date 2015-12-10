@@ -5,7 +5,8 @@ public class split : MonoBehaviour
 {
     public GameObject drop;
     public GameObject Clone;
-    private bool issplit = false;
+    public static bool issplit = false;
+    public static bool mouse = false;
     // Use this for initialization
     void Start()
     {
@@ -19,13 +20,16 @@ public class split : MonoBehaviour
     }
     void OnMouseDown()
     {
+        mouse = true;
         if (!issplit)
         {
-            GameObject clone = (GameObject)Instantiate(Clone);
-            clone.transform.position = drop.transform.position + new Vector3(5, 0, 0);
+            GameObject clone = (GameObject)Instantiate(Clone, drop.transform.position + new Vector3(10, 0, 0), Quaternion.identity);
             issplit = true;
         }
     }
-
+void OnMouseExit()
+    {
+        mouse = false;
+    }
 }
 

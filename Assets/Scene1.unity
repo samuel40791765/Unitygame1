@@ -2814,7 +2814,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   drop: {fileID: 2123497094}
-  Clone: {fileID: 158232, guid: a275d40e316e8194c9858d94663aebc6, type: 2}
+  Clone: {fileID: 111026, guid: a275d40e316e8194c9858d94663aebc6, type: 2}
 --- !u!4 &1939072244 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: dee1f2cda9492694e9124ff28f53c5f3, type: 3}
