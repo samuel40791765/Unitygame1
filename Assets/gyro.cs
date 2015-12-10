@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class gyro : MonoBehaviour {
-    public GameObject ball;
     private bool isHasGyro = false;
     Vector3 force;
     // Use this for initialization
@@ -37,6 +36,6 @@ public class gyro : MonoBehaviour {
             force = new Vector3(-x * 200F, 0.0F, -y * 200F);
         }
 
-        ball.GetComponent<Rigidbody>().AddForce(force);
+        this.GetComponent<Rigidbody>().AddForce(force);
 	}
 }

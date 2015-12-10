@@ -112,12 +112,14 @@
     <Compile Include="Assets\Standard Assets\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\Standard Assets\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\Standard Assets\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Standard Assets\Water (Basic)\Sources\Scripts\WaterSimple.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\3DForge\FKM\PineForest\Documents\Fantasy Kingdom Mobile PineForest user guide.txt" />
     <None Include="Assets\CactusPack\Readme.txt" />
     <None Include="Assets\CactusPack\Shaders\Basic_Rimlight.shader" />
     <None Include="Assets\CactusPack\Shaders\VertexBlend.shader" />
-    <None Include="Assets\Fantasy Skybox FREE\Readme\Readme.txt" />
+    <None Include="Assets\Materials\Skyboxes\Fantasy Skybox FREE\Readme\Readme.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Fantasy\Fantasy Font - Normal.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Header.txt" />
     <None Include="Assets\NGUI\Examples\Atlases\Refractive\Refractive Font - Normal.txt" />
@@ -156,6 +158,7 @@
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Advanced.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\FXWater4Simple.shader" />
     <None Include="Assets\Standard Assets\Environment\Water\Water4\Shaders\WaterInclude.cginc" />
+    <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
     <None Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\TerrainReplacement.shader" />
     <None Include="Assets\ats Package\ats pathShader Package\Shader\ats Road Path bumped diffuse alphatest.shader" />
     <None Include="Assets\ats Package\ats treeBarkShader Package\Shader\BillboardTree.shader" />
