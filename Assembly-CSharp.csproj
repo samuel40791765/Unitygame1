@@ -167,8 +167,11 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\CustomTerrainScript.cs" />
      <Compile Include="Assets\destination.cs" />
+     <Compile Include="Assets\drophealth.cs" />
      <Compile Include="Assets\gyro.cs" />
+     <Compile Include="Assets\merge.cs" />
      <Compile Include="Assets\pivot.cs" />
+     <Compile Include="Assets\split.cs" />
      <Compile Include="Assets\start.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\TerrainReplacement.shader" />

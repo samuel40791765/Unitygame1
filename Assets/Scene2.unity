@@ -128,6 +128,10 @@ Prefab:
       propertyPath: m_Constraints
       value: 36
       objectReference: {fileID: 0}
+    - target: {fileID: 463592, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 20.4599991
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
   m_IsPrefabParent: 0
@@ -691,7 +695,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be848ac1b0578914eb74bf54b20ddb73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 849873526}
 --- !u!1001 &609404689
 Prefab:
   m_ObjectHideFlags: 0
@@ -1176,10 +1179,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38b6869e39324db469b03f267b139e67, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &849873526 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 108330, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
-  m_PrefabInternal: {fileID: 66810307}
 --- !u!1001 &877005100
 Prefab:
   m_ObjectHideFlags: 0
@@ -2228,7 +2227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf75f35a744fe44638a5ddb93c54f831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 849873526}
+  ball: {fileID: 0}
 --- !u!65 &1873485792
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2365,7 +2364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74b58e1b8d75289428e45007bb7d6032, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drop: {fileID: 849873526}
+  drop: {fileID: 0}
 --- !u!1 &2073750685
 GameObject:
   m_ObjectHideFlags: 0

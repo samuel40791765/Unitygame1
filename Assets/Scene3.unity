@@ -637,6 +637,22 @@ Prefab:
       propertyPath: m_Name
       value: Font (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 463592, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 3.61999989
+      objectReference: {fileID: 0}
+    - target: {fileID: 463592, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 463592, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 92.8700027
+      objectReference: {fileID: 0}
+    - target: {fileID: 463592, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 196
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 63fbbde8f18f20848967ed78bf094ef8, type: 2}
   m_IsPrefabParent: 0
