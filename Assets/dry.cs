@@ -3,11 +3,12 @@ using System.Collections;
 
 public class dry : MonoBehaviour {
 	public GameObject water;
-	public GameObject ball;
 	// Use this for initialization
-	void OnTriggerEnter (Collider other) {
-		Debug.Log("Player OnTriggerEnter");
-		drophealth.health = drophealth.health + 1;
-		water.transform.localPosition = water.transform.localPosition-new Vector3(0,3.3f,0);
+	void OnCollisionEnter (Collision other) {
+        if (other.gameObject.name == "drop")
+        {
+            Debug.Log("Player OnCollisionEnter");
+            water.transform.position = water.transform.position - new Vector3(0, 15f, 0);
+        }
 	}
 }
