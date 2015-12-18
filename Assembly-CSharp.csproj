@@ -165,7 +165,9 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
+     <Compile Include="Assets\Stalk.cs" />
      <Compile Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\CustomTerrainScript.cs" />
+     <Compile Include="Assets\cross.cs" />
      <Compile Include="Assets\destination.cs" />
      <Compile Include="Assets\drophealth.cs" />
      <Compile Include="Assets\dry.cs" />
