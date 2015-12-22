@@ -8,16 +8,18 @@ public class Stalk : MonoBehaviour {
     private float dis;
     private float slow;
 	private bool foundprey;
+    private bool run;
     // Use this for initialization
     void Start () {
 		foundprey = false;
+        run = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		this.transform.LookAt(target);
         dis = Vector3.Distance(this.transform.position, prey.transform.position);
-        if (dis <= 60)
+        if (dis <= 60&&run==true)
         {
             slow = dis*5;
             dir = prey.transform.position - this.transform.position;
@@ -29,13 +31,23 @@ public class Stalk : MonoBehaviour {
 	}
 
 	void OnCollisionEnter (Collision other) {
-		foundprey=true;
-		StartCoroutine (waitsec());
+        if (other.gameObject.name == "drop")
+        {
+            foundprey = true;
+            StartCoroutine(waitsec());
+            run = false;
+        }
 	}
+    void OnCollisionExit(Collision other)
+    {
+        if(other.gameObject.name=="drop")
+        {
+            run = true;
+        }
+    }
 
 
-
-	IEnumerator waitsec() {
+    IEnumerator waitsec() {
 		this.GetComponent<Animation>().Play ("attack2",PlayMode.StopAll);
 		yield return new WaitForSeconds(2);
 		foundprey=false;
