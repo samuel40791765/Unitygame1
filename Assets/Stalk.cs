@@ -4,6 +4,9 @@ using System.Collections;
 public class Stalk : MonoBehaviour {
     public GameObject prey;
 	public Transform target;
+	public GameObject onfire;
+	public GameObject spiderfire;
+	static public bool isdead = false;
     private Vector3 dir;
     private float dis;
     private float slow;
@@ -37,7 +40,12 @@ public class Stalk : MonoBehaviour {
             StartCoroutine(waitsec());
             run = false;
         }
+		if (onfire.activeSelf==true && other.gameObject.name=="drop") {
+			isdead=true;
+			StartCoroutine(waitsec());
+		}
 	}
+
     void OnCollisionExit(Collision other)
     {
         if(other.gameObject.name=="drop")
@@ -48,8 +56,16 @@ public class Stalk : MonoBehaviour {
 
 
     IEnumerator waitsec() {
-		this.GetComponent<Animation>().Play ("attack2",PlayMode.StopAll);
-		yield return new WaitForSeconds(2);
-		foundprey=false;
+		if (!isdead) {
+			this.GetComponent<Animation>().Play ("attack2",PlayMode.StopAll);
+			yield return new WaitForSeconds(2);
+			foundprey=false;
+		}
+		if(isdead) {
+			spiderfire.SetActive(true);
+			this.GetComponent<Animation>().Play ("death1",PlayMode.StopAll);
+			yield return new WaitForSeconds(2);
+			Destroy(this.gameObject);
+		}
 	}
 }
