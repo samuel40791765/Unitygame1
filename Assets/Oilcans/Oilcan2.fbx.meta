@@ -3,7 +3,14 @@ guid: e6abbdc1d627fb54180f463e3b5ab0fb
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
+    100000: OilCan2
+    100002: //RootNode
+    400000: OilCan2
+    400002: //RootNode
+    2300000: OilCan2
+    3300000: OilCan2
     4300000: OilCan2
+    11100000: //RootNode
   materials:
     importMaterials: 1
     materialName: 3
