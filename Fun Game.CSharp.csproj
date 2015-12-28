@@ -209,6 +209,7 @@
     <Compile Include="Assets\setfire.cs" />
     <Compile Include="Assets\split.cs" />
     <Compile Include="Assets\start.cs" />
+    <Compile Include="Assets\treemove.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3DForge\FKM\PineForest\Documents\Fantasy Kingdom Mobile PineForest user guide.txt" />

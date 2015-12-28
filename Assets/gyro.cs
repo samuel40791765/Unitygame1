@@ -5,6 +5,7 @@ public class gyro : MonoBehaviour
 {
     private bool isHasGyro = false;
     private float velo;
+    private float control;
     Vector3 force;
     float x;
     float y;
@@ -33,14 +34,22 @@ public class gyro : MonoBehaviour
                 x = Input.gyro.attitude.x;
                 y = Input.gyro.attitude.y;
                 z = Input.gyro.attitude.z;
-                force = new Vector3(-x * 500F, 0.0F, -y * 500F);
+                control = x * x + y * y + z * z;
+                if (control > 50)
+                    force = new Vector3(-x * 800F, 0.0F, -y * 800F);
+                else
+                    force = new Vector3(-x * 200F, 0.0F, -y * 200F);
             }
             else if (!destination.AtEnd)
             {
                 x = Input.acceleration.x;
                 y = Input.acceleration.y;
                 z = Input.acceleration.z;
-                force = new Vector3(-x * 500F, 0.0F, -y * 500F);
+                control = x * x + y * y + z * z;
+                if(control>50)
+                force = new Vector3(-x * 800F, 0.0F, -y * 800F);
+                else
+                force = new Vector3(-x * 200F, 0.0F, -y * 200F);
             }
             this.GetComponent<Rigidbody>().AddForce(force);
         }
@@ -51,17 +60,22 @@ public class gyro : MonoBehaviour
                 x = Input.gyro.attitude.x;
                 y = Input.gyro.attitude.y;
                 z = Input.gyro.attitude.z;
+                control = x * x + y * y + z * z;
             }
             else if (!destination.AtEnd)
             {
                 x = Input.acceleration.x;
                 y = Input.acceleration.y;
                 z = Input.acceleration.z;
+                control = x * x + y * y + z * z;
             }
             float angle = ((this.GetComponent<Rigidbody>().velocity.x * -x) + (this.GetComponent<Rigidbody>().velocity.z * -y)) / (Mathf.Sqrt((this.GetComponent<Rigidbody>().velocity.x) * (this.GetComponent<Rigidbody>().velocity.x) + (this.GetComponent<Rigidbody>().velocity.z) * (this.GetComponent<Rigidbody>().velocity.z)) * Mathf.Sqrt(x * x + y * y));
             if (angle <= 0)
             {
-                force = new Vector3(-x * 500F, 0.0F, -y * 500F);
+                if(control>50)
+                force = new Vector3(-x * 800F, 0.0F, -y * 800F);
+                else
+                force = new Vector3(-x * 200F, 0.0F, -y * 200F);
                 this.GetComponent<Rigidbody>().AddForce(force);
             }
             else if (angle > 0)
@@ -75,18 +89,23 @@ public class gyro : MonoBehaviour
 
                 if (angle1 > 0 && angle2 < 0)
                 {
-                    force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle1 * uva1x*500F, 0, Mathf.Sqrt(x * x + y * y) * angle1 * uva1y*500F);
+                    if(control>50)
+                    force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle1 * uva1x*800F, 0, Mathf.Sqrt(x * x + y * y) * angle1 * uva1y*800F);
+                    else
+                        force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle1 * uva1x * 200F, 0, Mathf.Sqrt(x * x + y * y) * angle1 * uva1y * 200F);
                     this.GetComponent<Rigidbody>().AddForce(force);
                 }
                 else if (angle1 < 0 && angle2 > 0)
                 {
-                    force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle2 * uva2x*500F, 0, Mathf.Sqrt(x * x + y * y) * angle2 * uva2y*500F);
+                    if(control>50)
+                    force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle2 * uva2x*800F, 0, Mathf.Sqrt(x * x + y * y) * angle2 * uva2y*800F);
+                    else
+                        force = new Vector3(Mathf.Sqrt(x * x + y * y) * angle2 * uva2x * 200F, 0, Mathf.Sqrt(x * x + y * y) * angle2 * uva2y * 200F);
                     this.GetComponent<Rigidbody>().AddForce(force);
                 }
             }
 
         }
-        print(angle1);
-
+        print(control);
     }
 }

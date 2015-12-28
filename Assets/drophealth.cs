@@ -22,4 +22,11 @@ public class drophealth : MonoBehaviour {
             Application.LoadLevel("LevelEnd");
         }
     }
+    void OnCollisionEnter(Collision other)
+    {
+        if(other.gameObject.name=="tree1"|| other.gameObject.name == "tree2"||other.gameObject.name == "tree3")
+        {
+            water.transform.position = water.transform.position - new Vector3(0, 5, 0);
+        }
+    }
 }
