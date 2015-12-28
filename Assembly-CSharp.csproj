@@ -172,6 +172,7 @@
      <Compile Include="Assets\drophealth.cs" />
      <Compile Include="Assets\dry.cs" />
      <Compile Include="Assets\gyro.cs" />
+     <Compile Include="Assets\healing.cs" />
      <Compile Include="Assets\merge.cs" />
      <Compile Include="Assets\pivot.cs" />
      <Compile Include="Assets\setfire.cs" />
