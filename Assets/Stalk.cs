@@ -41,6 +41,7 @@ public class Stalk : MonoBehaviour {
             run = false;
         }
 		if (onfire.activeSelf==true && other.gameObject.name=="drop") {
+            run = false;
 			isdead=true;
 			StartCoroutine(waitsec());
 		}
