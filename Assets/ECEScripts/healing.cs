@@ -8,7 +8,7 @@ public class healing : MonoBehaviour {
 	void OnTriggerEnter(Collider other) {
 		if (other.gameObject.name == "drop")
 		{
-			water.transform.position = water.transform.position + new Vector3(0, 15f, 0);
+			water.transform.position = water.transform.position + new Vector3(0, 5f, 0);
 			healanim.SetActive (true);
 			healanim.GetComponentInChildren<ParticleEmitter>().Emit();
 			Destroy(this.gameObject);
