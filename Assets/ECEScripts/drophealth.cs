@@ -16,7 +16,7 @@ public class drophealth : MonoBehaviour {
 	void Update () {
         health=(water.transform.position.y - bottom.y)*100 /140;
         Debug.Log (+health);
-        water.transform.position = water.transform.position-new Vector3(0,0.075f,0);
+        water.transform.position = water.transform.position-new Vector3(0,0.05f,0);
        if(health<=43)
         {
             Application.LoadLevel("LevelEnd");

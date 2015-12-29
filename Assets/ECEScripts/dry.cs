@@ -8,14 +8,14 @@ public class dry : MonoBehaviour {
 		if (other.gameObject.name == "drop" && !Stalk.isdead)
 		{
 			Debug.Log("Player OnCollisionEnter");
-			water.transform.position = water.transform.position - new Vector3(0, 5f, 0);
+			water.transform.position = water.transform.position - new Vector3(0, 4f, 0);
 		}
 	}
 
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.name == "drop")
 		{
-			water.transform.position = water.transform.position - new Vector3(0, 5f, 0);
+			water.transform.position = water.transform.position - new Vector3(0, 4f, 0);
 		}
 	}
 }

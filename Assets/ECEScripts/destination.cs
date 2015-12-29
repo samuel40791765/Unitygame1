@@ -14,8 +14,9 @@ public class destination : MonoBehaviour {
 
 		ball.GetComponent<Rigidbody>().velocity = new Vector3(1,1,1);
 		AtEnd = true;
-	
+		
 		ResetTimer();
+
 	}
 	
 	// Update is called once per frame
@@ -24,6 +25,7 @@ public class destination : MonoBehaviour {
 		Timer += Time.deltaTime;
 		if(Timer >= 2.0)
 		{
+			AtEnd=false;
 			ResetTimer();
 			Application.LoadLevel("LevelEnd");
 		}
