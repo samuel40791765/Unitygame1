@@ -116,6 +116,10 @@ public class gyro : MonoBehaviour
 
         }
         print(control);
+
+		if (healanim.activeSelf) {
+			StartCoroutine(Wait ());
+		}
     }
 }
 
