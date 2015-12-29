@@ -1,74 +1,81 @@
-Base path: /Applications/Unity/Unity.app/Contents
-Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-1924689920
+Base path: C:/Program Files/Unity/Editor/Data
+Pipe name: \\.\pipe\UnityShaderCompiler-64bit-1-4448
 Cmd: getPlatforms
 Cmd: preprocess
-  insize=1572 outsize=888 ok=1
+  insize=1671 outsize=948 ok=1
 Cmd: preprocess
-  insize=1801 outsize=900 ok=1
+  insize=1907 outsize=961 ok=1
 Cmd: preprocess
   error: 1 plat 18 at (61): Both vertex and fragment programs must be present in a CGPROGRAM. Excluding it from compilation.
-  insize=1919 outsize=2253 ok=1
+  insize=2007 outsize=2300 ok=1
 Cmd: preprocess
-  insize=219 outsize=219 ok=1
+  insize=238 outsize=238 ok=1
 Cmd: preprocess
-  insize=1523 outsize=503 ok=1
+  insize=1602 outsize=535 ok=1
 Cmd: preprocess
-  insize=4159 outsize=1016 ok=1
+  insize=4320 outsize=1045 ok=1
 Cmd: preprocess
-  insize=1829 outsize=857 ok=1
+  insize=1940 outsize=918 ok=1
 Cmd: preprocess
-  insize=718 outsize=1677 ok=1
+  insize=758 outsize=1697 ok=1
 Cmd: preprocess
-  insize=479 outsize=479 ok=1
+  insize=514 outsize=514 ok=1
 Cmd: preprocess
-  insize=12815 outsize=2575 ok=1
+  insize=13263 outsize=2671 ok=1
 Cmd: preprocess
   insize=842 outsize=1254 ok=1
 Cmd: preprocess
-  insize=1834 outsize=876 ok=1
+  insize=1943 outsize=936 ok=1
 Cmd: preprocess
-  insize=3056 outsize=1760 ok=1
+  insize=3198 outsize=1837 ok=1
 Cmd: preprocess
-  insize=1462 outsize=503 ok=1
+  insize=1541 outsize=535 ok=1
 Cmd: preprocess
-  insize=11975 outsize=2457 ok=1
+  insize=12408 outsize=2547 ok=1
 Cmd: preprocess
   error: 1 plat 18 at (57): Both vertex and fragment programs must be present in a CGPROGRAM. Excluding it from compilation.
-  insize=1920 outsize=781 ok=1
+  insize=2011 outsize=818 ok=1
 Cmd: preprocess
-  insize=1875 outsize=895 ok=1
+  insize=1984 outsize=958 ok=1
 Cmd: preprocess
-  insize=1805 outsize=885 ok=1
+  insize=1914 outsize=947 ok=1
 Cmd: preprocess
   error: 1 plat 18 at (31): Both vertex and fragment programs must be present in a CGPROGRAM. Excluding it from compilation.
-  insize=939 outsize=671 ok=1
+  insize=982 outsize=699 ok=1
 Cmd: preprocess
-  insize=1802 outsize=527 ok=1
+  insize=1890 outsize=547 ok=1
 Cmd: preprocess
-  insize=1798 outsize=882 ok=1
+  insize=1907 outsize=944 ok=1
 Cmd: preprocess
   insize=3042 outsize=2109 ok=1
 Cmd: preprocess
-  insize=1871 outsize=896 ok=1
+  insize=1982 outsize=959 ok=1
 Cmd: preprocess
-  insize=1891 outsize=860 ok=1
+  insize=2003 outsize=921 ok=1
 Cmd: preprocess
-  insize=4553 outsize=1576 ok=1
+  insize=4715 outsize=1590 ok=1
 Cmd: preprocess
-  insize=1047 outsize=1685 ok=1
+  insize=1090 outsize=1701 ok=1
 Cmd: preprocess
-  insize=435 outsize=435 ok=1
+  insize=469 outsize=469 ok=1
 Cmd: preprocess
-  insize=1102 outsize=448 ok=1
+  insize=1170 outsize=479 ok=1
 Cmd: preprocess
-  insize=5911 outsize=3828 ok=1
+  insize=6178 outsize=3919 ok=1
+Cmd: compileSnippet
+  error: 2 plat 4 at (64): 'vert': output parameter 'o' not completely initialized\nCompiling Vertex program with DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF
+  api=4 type=0 insize=9668 outsize=0 kw=DIRECTIONAL LIGHTMAP_OFF DIRLIGHTMAP_OFF DYNAMICLIGHTMAP_OFF pd= ok=0
 Cmd: preprocess
-  insize=1524 outsize=883 ok=1
+  insize=1624 outsize=947 ok=1
 Cmd: preprocess
   insize=2361 outsize=2709 ok=1
 Cmd: preprocess
-  insize=1241 outsize=492 ok=1
+  insize=1315 outsize=524 ok=1
 Cmd: preprocess
   insize=3098 outsize=2068 ok=1
 Cmd: preprocess
-  insize=1667 outsize=928 ok=1
+  insize=1772 outsize=993 ok=1
+Cmd: compileSnippet
+  api=4 type=0 insize=4107 outsize=2753 kw=POINT SHADOWS_OFF pd= ok=1
+Cmd: compileSnippet
+  api=4 type=1 insize=4107 outsize=6165 kw=POINT SHADOWS_OFF pd= ok=1
