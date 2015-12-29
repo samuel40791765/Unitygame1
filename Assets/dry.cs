@@ -15,7 +15,6 @@ public class dry : MonoBehaviour {
 	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.name == "drop")
 		{
-			Debug.Log("Player OnCollisionEnter");
 			water.transform.position = water.transform.position - new Vector3(0, 15f, 0);
 		}
 	}
