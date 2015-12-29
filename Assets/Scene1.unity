@@ -1812,16 +1812,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6a150fea75eb462391fd296fec9a214, type: 2}
   m_IsPrefabParent: 0
-<<<<<<< Updated upstream
 --- !u!1001 &729906524
-=======
 --- !u!1001 &712429771
->>>>>>> Stashed changes
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< Updated upstream
     m_TransformParent: {fileID: 2123497100}
     m_Modifications:
     - target: {fileID: 440256, guid: dc923df655625b449aa7354622d95bb8, type: 2}
@@ -1862,7 +1858,6 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc923df655625b449aa7354622d95bb8, type: 2}
-=======
     m_TransformParent: {fileID: 1499060116}
     m_Modifications:
     - target: {fileID: 465580, guid: f57c701b335804af890276e67710c3e4, type: 2}
@@ -1911,7 +1906,6 @@ Prefab:
       objectReference: {fileID: 1345763788}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f57c701b335804af890276e67710c3e4, type: 2}
->>>>>>> Stashed changes
   m_IsPrefabParent: 0
 --- !u!4 &765137781 stripped
 Transform:
@@ -5109,8 +5103,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
-<<<<<<< Updated upstream
-=======
 --- !u!1 &1911388551
 GameObject:
   m_ObjectHideFlags: 0
@@ -5172,7 +5164,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   drop: {fileID: 2123497094}
   Clone: {fileID: 111026, guid: a275d40e316e8194c9858d94663aebc6, type: 2}
->>>>>>> Stashed changes
 --- !u!4 &1939072244 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: dee1f2cda9492694e9124ff28f53c5f3, type: 3}

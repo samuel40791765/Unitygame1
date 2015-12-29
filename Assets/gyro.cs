@@ -33,7 +33,7 @@ public class gyro : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-<<<<<<< Updated upstream
+
         velo = (this.GetComponent<Rigidbody>().velocity.x) * (this.GetComponent<Rigidbody>().velocity.x) + (this.GetComponent<Rigidbody>().velocity.z) * (this.GetComponent<Rigidbody>().velocity.z);
         if (velo <= 500)
         {
@@ -115,7 +115,7 @@ public class gyro : MonoBehaviour
 
         }
         print(control);
-=======
+
 		velo = (this.GetComponent<Rigidbody> ().velocity.x) * (this.GetComponent<Rigidbody> ().velocity.x) + (this.GetComponent<Rigidbody> ().velocity.z) * (this.GetComponent<Rigidbody> ().velocity.z);
 		if (velo <= 500) {
 			if (isHasGyro && !destination.AtEnd) {
@@ -168,6 +168,6 @@ public class gyro : MonoBehaviour
 		if (healanim.activeSelf) {
 			StartCoroutine(Wait ());
 		}
->>>>>>> Stashed changes
+
     }
 }

@@ -2,10 +2,7 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/gyro.cs">
     <Files>
-      <File FileName="Assets/dry.cs" Line="5" Column="2" />
-      <File FileName="Assets/Stalk.cs" Line="70" Column="3" />
-      <File FileName="Assets/healing.cs" Line="13" Column="29" />
-      <File FileName="Assets/gyro.cs" Line="85" Column="47" />
+      <File FileName="Assets/gyro.cs" Line="171" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
