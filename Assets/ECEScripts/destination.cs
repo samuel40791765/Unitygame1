@@ -26,6 +26,7 @@ public class destination : MonoBehaviour {
 		if(Timer >= 2.0)
 		{
 			AtEnd=false;
+			Stalk.isdead=false;
 			ResetTimer();
 			Application.LoadLevel("LevelEnd");
 		}
