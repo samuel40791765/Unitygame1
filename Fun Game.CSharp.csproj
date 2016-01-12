@@ -83,7 +83,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\EndGame.cs" />
+    <Compile Include="Assets\ECEScripts\EndGame.cs" />
+    <Compile Include="Assets\ECEScripts\Stalk.cs" />
+    <Compile Include="Assets\ECEScripts\cross.cs" />
+    <Compile Include="Assets\ECEScripts\destination.cs" />
+    <Compile Include="Assets\ECEScripts\drophealth.cs" />
+    <Compile Include="Assets\ECEScripts\dry.cs" />
+    <Compile Include="Assets\ECEScripts\healing.cs" />
+    <Compile Include="Assets\ECEScripts\merge.cs" />
+    <Compile Include="Assets\ECEScripts\pivot.cs" />
+    <Compile Include="Assets\ECEScripts\setfire.cs" />
+    <Compile Include="Assets\ECEScripts\split.cs" />
+    <Compile Include="Assets\ECEScripts\start.cs" />
+    <Compile Include="Assets\ECEScripts\treemove.cs" />
     <Compile Include="Assets\Materials\Skyboxes\Fantasy Skybox FREE\Scripts\FSPlayer.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipItems.cs" />
     <Compile Include="Assets\NGUI\Examples\Scripts\InventorySystem\Game\EquipRandomItem.cs" />
@@ -203,20 +215,9 @@
     <Compile Include="Assets\NGUI\Scripts\UI\UITiledSprite.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
     <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
-    <Compile Include="Assets\Stalk.cs" />
     <Compile Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\CustomTerrainScript.cs" />
-    <Compile Include="Assets\cross.cs" />
-    <Compile Include="Assets\destination.cs" />
-    <Compile Include="Assets\drophealth.cs" />
-    <Compile Include="Assets\dry.cs" />
     <Compile Include="Assets\gyro.cs" />
-    <Compile Include="Assets\healing.cs" />
-    <Compile Include="Assets\merge.cs" />
-    <Compile Include="Assets\pivot.cs" />
-    <Compile Include="Assets\setfire.cs" />
-    <Compile Include="Assets\split.cs" />
-    <Compile Include="Assets\start.cs" />
-    <Compile Include="Assets\treemove.cs" />
+    <Compile Include="Assets\mainmenu.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\3DForge\FKM\PineForest\Documents\Fantasy Kingdom Mobile PineForest user guide.txt" />
