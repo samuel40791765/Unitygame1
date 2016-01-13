@@ -126,7 +126,7 @@ public class UIButtonPlayAnimation : MonoBehaviour
 			if (this.name == "Level3")
 				Application.LoadLevel("Scene3");
 			if (this.name =="Back")
-				Application.LoadLevel("Menu");
+				Application.LoadLevel("mainmenu");
 		}
 	}
 
