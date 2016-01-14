@@ -20,17 +20,19 @@ public class Stalk : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		this.transform.LookAt(target);
-        dis = Vector3.Distance(this.transform.position, prey.transform.position);
-        if (dis <= 60&&run==true)
-        {
-            slow = dis*5;
-            dir = prey.transform.position - this.transform.position;
-			if (foundprey==false) {
-				this.GetComponent<Animation>().Play ("walk");
-			}
-            this.transform.Translate(dir / slow);
-        }
+		if(Time.timeScale==1) {
+			this.transform.LookAt(target);
+        	dis = Vector3.Distance(this.transform.position, prey.transform.position);
+        	if (dis <= 60&&run==true)
+        	{
+        	    slow = dis*5;
+    	        dir = prey.transform.position - this.transform.position;
+				if (foundprey==false) {
+					this.GetComponent<Animation>().Play ("walk");
+				}
+            	this.transform.Translate(dir / slow);
+        	}
+		}
 	}
 
 	void OnCollisionEnter (Collision other) {

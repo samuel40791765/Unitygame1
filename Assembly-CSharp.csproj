@@ -181,6 +181,7 @@
      <Compile Include="Assets\destroyself.cs" />
      <Compile Include="Assets\gyro.cs" />
      <Compile Include="Assets\mainmenu.cs" />
+     <Compile Include="Assets\pause.cs" />
      <Compile Include="Assets\snowball.cs" />
      <Compile Include="Assets\snowman.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
