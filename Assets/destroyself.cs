@@ -12,4 +12,9 @@ public class destroyself : MonoBehaviour {
 		yield return new WaitForSeconds (1.5f);
 		Destroy (this.gameObject);
 	}
+
+	void OnCollisionEnter (Collision other) {
+		Destroy (this.gameObject);
+	}
+
 }

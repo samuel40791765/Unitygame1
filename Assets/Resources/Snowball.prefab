@@ -76,7 +76,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 36
   m_CollisionDetection: 0
 --- !u!114 &11470592
 MonoBehaviour:
@@ -112,6 +112,10 @@ Prefab:
       propertyPath: water
       value: 
       objectReference: {fileID: 100006, guid: b544816461f324e56a39767fdeb5b114, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_Constraints
+      value: 36
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 134938}
