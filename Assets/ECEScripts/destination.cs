@@ -7,10 +7,15 @@ public class destination : MonoBehaviour {
 	float Timer;
 	public GameObject ball;
 	public GUIStyle style;
-	private bool passed=false;
-	private bool failed=false;
+	static public bool passed;
+	static public bool failed;
 	static public bool AtEnd = false;
 
+	void Start() {
+		failed = false;
+		passed = false;
+
+	}
 	void Update(){
 		if (drophealth.health <= 43) {
 			failed=true;
@@ -20,7 +25,7 @@ public class destination : MonoBehaviour {
 	void OnTriggerEnter (Collider other) {
 		Debug.Log("Player OnTriggerEnter");
 
-		ball.GetComponent<Rigidbody>().velocity = new Vector3(1,1,1);
+		ball.GetComponent<Rigidbody>().velocity = new Vector3(2,3,2);
 		AtEnd = true;
 		passed = true;
 		ResetTimer();
@@ -43,7 +48,6 @@ public class destination : MonoBehaviour {
 		{
 			AtEnd=false;
 			Stalk.isdead=false;
-			passed=false;
 			ResetTimer();
 			Application.LoadLevel("LevelEnd");
 		}

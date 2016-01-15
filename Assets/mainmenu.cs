@@ -7,6 +7,7 @@ public class mainmenu : MonoBehaviour {
     public Canvas illustration;
     public Button start;
     public Button tutorial;
+	public static int scene;
     // Use this for initialization
 	void Start () {
         level = level.GetComponent<Canvas>();
@@ -25,14 +26,18 @@ public class mainmenu : MonoBehaviour {
     }
     public void DesertPress()
     {
+		scene = 1;
         Application.LoadLevel("Scene1");
     }
     public void ForestPress()
     {
+		scene = 2;
+
         Application.LoadLevel("Scene2");
     }
 	public void IcePress()
     {
+		scene = 3;
         Application.LoadLevel("Scene3");
     }
     public void IllustratePress()

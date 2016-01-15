@@ -10,18 +10,20 @@ public class drophealth : MonoBehaviour {
 	void Start () {
         top = water.transform.position;
         bottom = top - new Vector3(0, 140, 0);
+		health=(water.transform.position.y - bottom.y)*100 /140;
     }
 	
 	// Update is called once per frame
 	void Update () {
-        health=(water.transform.position.y - bottom.y)*100 /140;
-        Debug.Log (+health);
-		if (Time.timeScale == 1 && !countdown.show) {
+		health=(water.transform.position.y - bottom.y)*100 /140;
+		Debug.Log (+health);
+		if (Time.timeScale == 1 && !countdown.show && !destination.AtEnd) {
 			water.transform.position = water.transform.position-new Vector3(0,0.05f,0);
 		}
 
        if(health<=43)
         {
+			this.GetComponent<MeshRenderer>().enabled = false;
 			StartCoroutine(wait ());
         }
     }

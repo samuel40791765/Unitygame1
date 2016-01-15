@@ -18,10 +18,10 @@ public class countdown : MonoBehaviour {
 	void OnGUI () {
 		if (show) {
 			if(timeleft!=0){
-				GUI.Label (new Rect (650, 650, 300, 50), (timeleft.ToString ()), style);
+				GUI.Label (new Rect (650, 750, 300, 50), (timeleft.ToString ()), style);
 			}
 			else{
-				GUI.Label (new Rect (650, 650, 300, 50), ("GO!"), style);
+				GUI.Label (new Rect (650, 750, 300, 50), ("GO!"), style);
 			}
 			starttime = starttime - Time.deltaTime;
 			timeleft=(int)starttime;

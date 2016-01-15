@@ -42,7 +42,7 @@ public class Stalk : MonoBehaviour {
             StartCoroutine(waitsec());
             run = false;
         }
-		if (onfire.activeSelf==true && other.gameObject.name=="drop") {
+		if (onfire.activeSelf==true && other.gameObject.name=="drop" && !isdead) {
             run = false;
 			isdead=true;
 			StartCoroutine(waitsec());
@@ -69,6 +69,7 @@ public class Stalk : MonoBehaviour {
 			this.GetComponent<Animation>().Play ("death1",PlayMode.StopAll);
 			yield return new WaitForSeconds(2);
 			Destroy(this.gameObject);
+			finalscore.deathcount=finalscore.deathcount+1;
 		}
 	}
 	
