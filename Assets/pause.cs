@@ -32,4 +32,11 @@ public class pause : MonoBehaviour {
 		pausemenu.enabled = false;
 		pausebutton.enabled = true;
 	}
+
+	public void Backtomenu() {
+		Time.timeScale = 1;
+		pausemenu.enabled = false;
+		pausebutton.enabled = true;
+		Application.LoadLevel ("mainmenu");
+	}
 }

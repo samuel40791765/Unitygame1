@@ -16,7 +16,7 @@ public class drophealth : MonoBehaviour {
 	void Update () {
         health=(water.transform.position.y - bottom.y)*100 /140;
         Debug.Log (+health);
-		if (Time.timeScale == 1) {
+		if (Time.timeScale == 1 && !countdown.show) {
 			water.transform.position = water.transform.position-new Vector3(0,0.05f,0);
 		}
 

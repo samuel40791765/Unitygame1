@@ -5,7 +5,7 @@ public class countdown : MonoBehaviour {
 	private float starttime;
 	private int timeleft;
 	public GUIStyle style;
-	private bool show;
+	static public bool show;
 	// Use this for initialization
 	void Start () {
 		starttime = 6;
