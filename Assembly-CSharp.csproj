@@ -178,6 +178,7 @@
      <Compile Include="Assets\NGUI\Scripts\UI\UITooltip.cs" />
      <Compile Include="Assets\NGUI\Scripts\UI\UIViewport.cs" />
      <Compile Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\CustomTerrainScript.cs" />
+     <Compile Include="Assets\countdown.cs" />
      <Compile Include="Assets\destroyself.cs" />
      <Compile Include="Assets\gyro.cs" />
      <Compile Include="Assets\mainmenu.cs" />
