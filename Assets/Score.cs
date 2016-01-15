@@ -4,10 +4,11 @@ using System.Collections;
 
 public class Score : MonoBehaviour {
 	public Text Timeshow;
-	private float timeused;
+	static public float timeused;
 	// Use this for initialization
 	void Start () {
-		StartCoroutine (wait ());
+		timeused = 0;
+		Timeshow.text= "TimeUsed: " +timeused.ToString() +" seconds";
 	}
 	
 	// Update is called once per frame
@@ -16,12 +17,8 @@ public class Score : MonoBehaviour {
 			timeused=0;
 		}
 		timeused = Time.deltaTime + timeused;
-		Timeshow.text= "TimeUsed: " +timeused.ToString();
+		Timeshow.text= "TimeUsed: " +timeused.ToString()+" seconds";
 	}
 
-	IEnumerator wait() {
-		yield return new WaitForSeconds (3);
-		timeused = 0;
-		Timeshow.text= "TimeUsed: " +timeused.ToString();
-	}
+
 }

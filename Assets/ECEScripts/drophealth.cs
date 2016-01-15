@@ -3,7 +3,7 @@ using System.Collections;
 
 public class drophealth : MonoBehaviour {
     public GameObject water;
-	private float health;
+	static public float health;
     private Vector3 top;
     private Vector3 bottom;
 	// Use this for initialization
@@ -22,7 +22,7 @@ public class drophealth : MonoBehaviour {
 
        if(health<=43)
         {
-            Application.LoadLevel("LevelEnd");
+			StartCoroutine(wait ());
         }
     }
     void OnCollisionEnter(Collision other)
@@ -32,4 +32,9 @@ public class drophealth : MonoBehaviour {
             water.transform.position = water.transform.position - new Vector3(0, 5, 0);
         }
     }
+
+	IEnumerator wait() {
+		yield return new WaitForSeconds (3);
+		Application.LoadLevel("LevelEnd");
+	}
 }

@@ -9,6 +9,8 @@ public class cross : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.Rotate(0, 1, 0);
+		if (Time.timeScale == 1) {
+			this.transform.Rotate (0, 1, 0);
+		}
 	}
 }
