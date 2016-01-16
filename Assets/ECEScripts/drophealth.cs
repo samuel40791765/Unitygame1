@@ -21,11 +21,11 @@ public class drophealth : MonoBehaviour {
 			water.transform.position = water.transform.position-new Vector3(0,0.05f,0);
 		}
 
-       if(health<=43)
+       /*if(health<=43)
         {
 			this.GetComponent<MeshRenderer>().enabled = false;
 			StartCoroutine(wait ());
-        }
+        }*/
     }
     void OnCollisionEnter(Collision other)
     {

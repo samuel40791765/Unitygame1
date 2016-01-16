@@ -61,6 +61,7 @@ public class Stalk : MonoBehaviour {
     IEnumerator waitsec() {
 		if (!isdead) {
 			this.GetComponent<Animation>().Play ("attack2",PlayMode.StopAll);
+			finalscore.hitstaken++;
 			yield return new WaitForSeconds(2);
 			foundprey=false;
 		}

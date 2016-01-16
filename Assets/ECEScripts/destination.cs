@@ -14,18 +14,18 @@ public class destination : MonoBehaviour {
 	void Start() {
 		failed = false;
 		passed = false;
-
+		healing.healcount = 0;
+		finalscore.hitstaken = 0;
 	}
 	void Update(){
-		if (drophealth.health <= 43) {
+		/*if (drophealth.health <= 43) {
 			failed=true;
-		}
+		}*/
 	}
 	// Use this for initialization
 	void OnTriggerEnter (Collider other) {
 		Debug.Log("Player OnTriggerEnter");
-
-		ball.GetComponent<Rigidbody>().velocity = new Vector3(2,3,2);
+		ball.GetComponent<Rigidbody>().velocity = new Vector3(0,5,0);
 		AtEnd = true;
 		passed = true;
 		ResetTimer();
@@ -36,9 +36,9 @@ public class destination : MonoBehaviour {
 		if (passed) {
 			GUI.Label (new Rect (150, 650, 300, 50), "You Passed!!", style);
 		}
-		if (failed) {
+		/*if (failed) {
 			GUI.Label (new Rect (50, 650, 300, 50), "You Dried Up...", style);
-		}
+		}*/
 	}
 	// Update is called once per frame
 	void OnTriggerStay (Collider other) {

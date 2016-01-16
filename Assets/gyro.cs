@@ -32,7 +32,7 @@ public class gyro : MonoBehaviour
     }
 
 	void OnGUI(){
-		GUI.Label (new Rect (50, 50, 300, 50),"x= " +x +" y=" +y + " z" +z );
+		//GUI.Label (new Rect (50, 50, 300, 50),"x= " +x +" y=" +y + " z" +z );
 	}
     // Update is called once per frame
     void Update()

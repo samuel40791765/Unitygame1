@@ -9,6 +9,7 @@ public class dry : MonoBehaviour {
 		{
 			Debug.Log("Player OnCollisionEnter");
 			water.transform.position = water.transform.position - new Vector3(0, 4f, 0);
+			finalscore.hitstaken++;
 		}
 	}
 
@@ -16,6 +17,7 @@ public class dry : MonoBehaviour {
 		if (other.gameObject.name == "drop")
 		{
 			water.transform.position = water.transform.position - new Vector3(0, 4f, 0);
+			finalscore.hitstaken++;
 		}
 	}
 }

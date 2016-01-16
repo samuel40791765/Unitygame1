@@ -17,12 +17,16 @@ public class pause : MonoBehaviour {
 		Debug.Log("Pause");
 		Time.timeScale =0;
 		pausemenu.enabled = true;
+		countdown.show = false;
 		pausebutton.enabled = false;
 	}
 
 	public void resume() {
 		Time.timeScale = 1;
 		pausemenu.enabled = false;
+		if (countdown.on) {
+			countdown.show = true;
+		}
 		pausebutton.enabled = true;
 	}
 

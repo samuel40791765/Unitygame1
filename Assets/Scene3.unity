@@ -346,7 +346,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -400,7 +400,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -492,7 +492,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -627,7 +627,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f57c701b335804af890276e67710c3e4, type: 2}
   m_IsPrefabParent: 0
@@ -1159,7 +1159,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -1246,9 +1246,154 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11495244, guid: c67ae651d0e19f6428384bbe2d745044, type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 196718, guid: c67ae651d0e19f6428384bbe2d745044, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 103926, guid: c67ae651d0e19f6428384bbe2d745044, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c67ae651d0e19f6428384bbe2d745044, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &459643699 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 196718, guid: c67ae651d0e19f6428384bbe2d745044, type: 2}
+  m_PrefabInternal: {fileID: 459643698}
+--- !u!114 &459643700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 459643699}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 777bb43e0dd6e4a208c8e927dc9c55cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  style:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: 82c57606592c2f0489dfb3257f16bd7c, type: 3}
+    m_FontSize: 300
+    m_FontStyle: 0
+    m_Alignment: 6
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
+  style2:
+    m_Name: 
+    m_Normal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Hover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Active:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Focused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnNormal:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnHover:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnActive:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_OnFocused:
+      m_Background: {fileID: 0}
+      m_TextColor: {r: 0, g: 0, b: 0, a: 1}
+    m_Border:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Margin:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Padding:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Overflow:
+      m_Left: 0
+      m_Right: 0
+      m_Top: 0
+      m_Bottom: 0
+    m_Font: {fileID: 12800000, guid: 82c57606592c2f0489dfb3257f16bd7c, type: 3}
+    m_FontSize: 150
+    m_FontStyle: 0
+    m_Alignment: 0
+    m_WordWrap: 0
+    m_RichText: 1
+    m_TextClipping: 0
+    m_ImagePosition: 0
+    m_ContentOffset: {x: 0, y: 0}
+    m_FixedWidth: 0
+    m_FixedHeight: 0
+    m_StretchWidth: 1
+    m_StretchHeight: 0
 --- !u!1001 &519183525
 Prefab:
   m_ObjectHideFlags: 0
@@ -2423,6 +2568,10 @@ Prefab:
       propertyPath: healanim
       value: 
       objectReference: {fileID: 206383942}
+    - target: {fileID: 5440544, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f826c1bd084b76d4eafa286f620752e0, type: 2}
   m_IsPrefabParent: 0
@@ -2458,6 +2607,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   water: {fileID: 827923878}
+  player: {fileID: 0}
 --- !u!1001 &1030777545
 Prefab:
   m_ObjectHideFlags: 0
@@ -4250,7 +4400,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -4859,7 +5009,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -4913,7 +5063,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -5401,7 +5551,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
@@ -5586,7 +5736,7 @@ Prefab:
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: water
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 827923878}
     - target: {fileID: 11466648, guid: f57c701b335804af890276e67710c3e4, type: 2}
       propertyPath: healanim
       value: 
