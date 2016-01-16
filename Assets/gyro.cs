@@ -31,6 +31,9 @@ public class gyro : MonoBehaviour
         healanim.SetActive(false);
     }
 
+	void OnGUI(){
+		GUI.Label (new Rect (50, 50, 300, 50),"x= " +x +" y=" +y + " z" +z );
+	}
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +51,7 @@ public class gyro : MonoBehaviour
                     force = new Vector3(-x * 800F, 0.0F, -y * 800F);
                 else
                     force = new Vector3(-x * 200F, 0.0F, -y * 200F);
+				Debug.Log("Player gyro");
             }
             else if (!destination.AtEnd)
             {
@@ -59,6 +63,7 @@ public class gyro : MonoBehaviour
                     force = new Vector3(-x * 800F, 0.0F, -y * 800F);
                 else
                     force = new Vector3(-x * 200F, 0.0F, -y * 200F);
+				Debug.Log("Player accelerate");
             }
             this.GetComponent<Rigidbody>().AddForce(force);
         }
