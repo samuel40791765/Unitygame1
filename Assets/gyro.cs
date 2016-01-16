@@ -51,7 +51,6 @@ public class gyro : MonoBehaviour
                     force = new Vector3(-x * 800F, 0.0F, -y * 800F);
                 else
                     force = new Vector3(-x * 200F, 0.0F, -y * 200F);
-				Debug.Log("Player gyro");
             }
             else if (!destination.AtEnd)
             {
@@ -63,7 +62,6 @@ public class gyro : MonoBehaviour
                     force = new Vector3(-x * 800F, 0.0F, -y * 800F);
                 else
                     force = new Vector3(-x * 200F, 0.0F, -y * 200F);
-				Debug.Log("Player accelerate");
             }
             this.GetComponent<Rigidbody>().AddForce(force);
         }
@@ -120,7 +118,6 @@ public class gyro : MonoBehaviour
             }
 
         }
-        print(control);
 
 		if (healanim.activeSelf) {
 			StartCoroutine(Wait ());
