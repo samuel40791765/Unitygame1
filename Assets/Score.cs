@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Score : MonoBehaviour {
+    public Text dropcollect;
 	public Text Timeshow;
 	static public float timeused;
 
@@ -11,6 +12,7 @@ public class Score : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		timeused = 0;
+        dropcollect.text = "Collected: " +finalscore.healthscore.ToString() +" drops";
 		Timeshow.text= "TimeUsed: " +timeused.ToString() +" seconds";
 		finalscore.deathcount = 0;
 	}
@@ -21,7 +23,8 @@ public class Score : MonoBehaviour {
 			timeused=0;
 		}
 		timeused = Time.deltaTime + timeused;
-		Timeshow.text= "TimeUsed: " +timeused.ToString()+" seconds";
+        dropcollect.text = "Collected: " + healing.healcount + " drops";
+        Timeshow.text= "TimeUsed: " +timeused.ToString()+" seconds";
 
 	}
 

@@ -21,10 +21,10 @@ public class countdown : MonoBehaviour {
 	void OnGUI () {
 		if (show) {
 			if(mainmenu.scene==1){
-				GUI.Label (new Rect (200, 200, 300, 300),("Watch out for Spiders!\n Grass sucks Water!"), style2);
+				GUI.Label (new Rect (100, 200, 300, 300),("Watch out for Spiders!\n Grass sucks Water!"), style2);
 			}
 			if(mainmenu.scene==2){
-				GUI.Label (new Rect (200, 200, 300, 300), ("Watch out for Spiders!\n Can you kill them?"), style2);
+				GUI.Label (new Rect (100, 200, 300, 300), ("Watch out for Spiders!\n Can you kill them?"), style2);
 			}
 			if(mainmenu.scene==3){
 				GUI.Label (new Rect (50, 200, 300, 300), ("Watch out for Snowballs!\n      They come fast!"), style2);

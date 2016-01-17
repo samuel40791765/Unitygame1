@@ -5,7 +5,7 @@ using System.Collections;
 public class finalscore : MonoBehaviour {
 	private float timescore;
 	private int deathscore;
-	private int healthscore;
+	static public int healthscore;
 	private int final;
 	static public int hitstaken = 0;
 	static public int deathcount=0;
@@ -21,7 +21,7 @@ public class finalscore : MonoBehaviour {
 			timescore = (int)Score.timeused - 3;
 			deathscore=deathcount;
 			healthscore=healing.healcount;
-			final=(100-(int)timescore)+(deathscore*10)+(healthscore*2)-(hitstaken*5);
+			final=(150-(int)timescore)+(deathscore*10)+(healthscore*2)-(hitstaken*5);
 			timesc.text = "Time: " +timescore;
 			deathsc.text="Enemies Slayed: "+deathscore;
 			healthsc.text="Water Collected: "+healing.healcount;
