@@ -182,11 +182,14 @@
      <Compile Include="Assets\countdown.cs" />
      <Compile Include="Assets\destroyself.cs" />
      <Compile Include="Assets\finalscore.cs" />
+     <Compile Include="Assets\grasssound.cs" />
      <Compile Include="Assets\gyro.cs" />
+     <Compile Include="Assets\levelupsound.cs" />
      <Compile Include="Assets\mainmenu.cs" />
      <Compile Include="Assets\pause.cs" />
      <Compile Include="Assets\snowball.cs" />
      <Compile Include="Assets\snowman.cs" />
+     <Compile Include="Assets\spidersound.cs" />
      <None Include="Assets\NGUI\Resources\Shaders\Unlit - Depth Cutout.shader" />
      <None Include="Assets\ats Package\Demoscene\Terrain\UnityTerrainBump\TerrainReplacement.shader" />
      <None Include="Assets\NGUI\Examples\Models\Orc\Orc Skin.shader" />
