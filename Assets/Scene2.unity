@@ -4929,7 +4929,7 @@ Transform:
   - {fileID: 1978817500}
   - {fileID: 1314055843}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
 --- !u!114 &225901488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5560,6 +5560,22 @@ Prefab:
     - target: {fileID: 440256, guid: dc923df655625b449aa7354622d95bb8, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 10812994, guid: dc923df655625b449aa7354622d95bb8, type: 2}
+      propertyPath: m_Color.r
+      value: .13867864
+      objectReference: {fileID: 0}
+    - target: {fileID: 10812994, guid: dc923df655625b449aa7354622d95bb8, type: 2}
+      propertyPath: m_Color.g
+      value: .992647052
+      objectReference: {fileID: 0}
+    - target: {fileID: 10812994, guid: dc923df655625b449aa7354622d95bb8, type: 2}
+      propertyPath: m_Color.b
+      value: .639280856
+      objectReference: {fileID: 0}
+    - target: {fileID: 10812994, guid: dc923df655625b449aa7354622d95bb8, type: 2}
+      propertyPath: m_Intensity
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: dc923df655625b449aa7354622d95bb8, type: 2}
